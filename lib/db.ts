@@ -42,3 +42,6 @@ export async function connectDB() {
   return cached.conn;
 }
 
+// Alias for convenience to support both dbConnect() and connectDB()
+export const dbConnect = connectDB;
+export default connectDB;
